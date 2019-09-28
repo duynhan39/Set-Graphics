@@ -14,10 +14,14 @@ Clone the project to where you want to have it on your local machine and run it 
 ## Quick Look
 
 ### Opening
+<p align="center">
 <img src="./ss/opening.png" width="350">
+</p>
 
 ### Game On
+<p align="center">
 <img src="./ss/gameon.png" width="350">
+</p>
 
 ## Versions
 
