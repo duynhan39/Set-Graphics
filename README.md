@@ -1,6 +1,7 @@
 # Set Graphics
-
+<p align="center">
 <img src="./Set/setIcon.svg" width="350">
+</p>
 
 ## Getting Started
 
