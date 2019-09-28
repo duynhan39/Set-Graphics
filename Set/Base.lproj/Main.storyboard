@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3j9-n0-sOY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Open View Controller-->
+        <scene sceneID="Qgi-OC-1B9">
+            <objects>
+                <viewController id="3j9-n0-sOY" customClass="SetOpenViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GSo-Tl-CVR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eG9-LU-DcS">
+                                <rect key="frame" x="16" y="36" width="343" height="560"/>
+                                <color key="backgroundColor" red="1" green="0.98823529409999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAH-ZP-6Tx" userLabel="Title Background">
+                                <rect key="frame" x="0.0" y="239.5" width="337" height="184"/>
+                                <color key="backgroundColor" red="1" green="0.98823529409999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="fcP-4t-bt0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IW7-ct-6gK">
+                                <rect key="frame" x="-10" y="137.5" width="347" height="372"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="271"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7db-7j-ZEB">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="bq4-gW-g8H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="New Game" id="sjl-gZ-Q7g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98823529409999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eG9-LU-DcS" firstAttribute="leading" secondItem="rlK-eT-3ee" secondAttribute="leading" constant="16" id="8Fj-IT-CiT"/>
+                            <constraint firstItem="7db-7j-ZEB" firstAttribute="leading" secondItem="rlK-eT-3ee" secondAttribute="leading" id="8rg-lo-nan"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IW7-ct-6gK" secondAttribute="trailing" id="9ew-Fd-BYN"/>
+                            <constraint firstItem="eG9-LU-DcS" firstAttribute="top" secondItem="rlK-eT-3ee" secondAttribute="top" constant="16" id="Ddu-a0-utn"/>
+                            <constraint firstItem="rlK-eT-3ee" firstAttribute="bottom" secondItem="7db-7j-ZEB" secondAttribute="bottom" id="KDr-cA-ZK0"/>
+                            <constraint firstItem="7db-7j-ZEB" firstAttribute="top" secondItem="eG9-LU-DcS" secondAttribute="bottom" constant="16" id="LRd-xw-rs3"/>
+                            <constraint firstItem="rlK-eT-3ee" firstAttribute="trailing" secondItem="7db-7j-ZEB" secondAttribute="trailing" id="YBJ-Eb-AON"/>
+                            <constraint firstItem="LAH-ZP-6Tx" firstAttribute="centerY" secondItem="rlK-eT-3ee" secondAttribute="centerY" constant="-12" id="p3d-a5-nEp"/>
+                            <constraint firstItem="rlK-eT-3ee" firstAttribute="leading" secondItem="IW7-ct-6gK" secondAttribute="leading" constant="10" id="tDI-mF-6VL"/>
+                            <constraint firstItem="IW7-ct-6gK" firstAttribute="centerY" secondItem="rlK-eT-3ee" secondAttribute="centerY" constant="-20" id="u7u-hT-sQN"/>
+                            <constraint firstItem="rlK-eT-3ee" firstAttribute="trailing" secondItem="eG9-LU-DcS" secondAttribute="trailing" constant="16" id="uXE-Mm-cfM"/>
+                            <constraint firstItem="LAH-ZP-6Tx" firstAttribute="trailing" secondItem="IW7-ct-6gK" secondAttribute="trailing" id="y7P-5S-ESy"/>
+                            <constraint firstItem="LAH-ZP-6Tx" firstAttribute="leading" secondItem="rlK-eT-3ee" secondAttribute="leading" id="zB7-7U-Ia3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rlK-eT-3ee"/>
+                    </view>
+                    <connections>
+                        <outlet property="frameView" destination="eG9-LU-DcS" id="80R-jc-BBY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIr-Lk-Moo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.51424287856082" y="80.799999999999997"/>
+        </scene>
+        <!--Set View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SetViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="redraw" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="81/81" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzB-5e-i2R">
+                                <rect key="frame" x="162" y="30" width="51" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIK-fd-Xte">
+                                <rect key="frame" x="276" y="24" width="89" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="newGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1r-yE-SWD"/>
+                                </connections>
+                            </button>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nW2-tz-fZP" customClass="DeckView" customModule="Set" customModuleProvider="target">
+                                <rect key="frame" x="10" y="63.5" width="355" height="593.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="spZ-br-50F" appends="YES" id="GWj-bE-laG"/>
+                                    <outletCollection property="gestureRecognizers" destination="ilL-5L-dcL" appends="YES" id="zyf-Ks-tLe"/>
+                                    <outletCollection property="gestureRecognizers" destination="k2g-xg-RKM" appends="YES" id="1LZ-w2-yHO"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FIK-fd-Xte" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="6Eo-N0-72u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nW2-tz-fZP" secondAttribute="bottom" constant="10" id="AZg-y5-zHv"/>
+                            <constraint firstItem="nW2-tz-fZP" firstAttribute="top" secondItem="BzB-5e-i2R" secondAttribute="bottom" constant="10" id="RHW-Tr-tFc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BzB-5e-i2R" secondAttribute="trailing" symbolic="YES" id="Rhn-lh-Isj"/>
+                            <constraint firstItem="FIK-fd-Xte" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BzB-5e-i2R" secondAttribute="trailing" constant="10" id="aO7-aW-0sn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nW2-tz-fZP" secondAttribute="trailing" constant="10" id="l4I-0n-mzh"/>
+                            <constraint firstItem="BzB-5e-i2R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="l8a-4R-efP"/>
+                            <constraint firstItem="nW2-tz-fZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="pQc-NA-VUb"/>
+                            <constraint firstItem="BzB-5e-i2R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tNd-ud-XTc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FIK-fd-Xte" secondAttribute="trailing" constant="10" id="x8c-60-AaW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="deckView" destination="nW2-tz-fZP" id="jmv-4r-xht"/>
+                        <outlet property="gameTitleLabel" destination="IW7-ct-6gK" id="fWr-u8-bn6"/>
+                        <outlet property="scoreLabel" destination="BzB-5e-i2R" id="k6b-Uy-iTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="spZ-br-50F">
+                    <connections>
+                        <action selector="chooseCard:" destination="BYZ-38-t0r" id="Mp1-sW-Pb4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="ilL-5L-dcL">
+                    <connections>
+                        <action selector="plus3cards:" destination="BYZ-38-t0r" id="lUI-LN-DsU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <rotationGestureRecognizer id="k2g-xg-RKM">
+                    <connections>
+                        <action selector="shuffleCardsOnTable:" destination="BYZ-38-t0r" id="3pU-Qk-djd"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="143" y="81"/>
+        </scene>
+    </scenes>
+</document>
